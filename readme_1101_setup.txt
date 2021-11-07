@@ -11,11 +11,16 @@ git init
 
 git add README.md
 
-git commit -m "first commit"
+git commit -m "initial setup commit"
 
 git branch -M main
 
 git remote add origin https://github.com/richardglenski/eth-dev-1101
+git remote remove origin
+git remote add origin  https://github.com/richardglenski/eth-dev-1101a.git
+git push origin main
+
+git pull origin main
 
 git push -u origin main
 
